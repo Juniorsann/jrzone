@@ -25,7 +25,7 @@ header {
     align-items: center;
     justify-content: space-between;
     box-shadow: none; /* Sem sombra por padrão */
-    transition: background 0.3s, box-shadow 0.3s; /* Transição suave */
+    transition: background 0.3s, box-shadow 0.3s, padding 0.3s; /* Transição suave */
 }
 
 /* Estilo da logo */
@@ -111,6 +111,15 @@ nav {
 header.scrolled {
     background: rgba(0, 0, 0, 0.8); /* Fundo escuro quando rolar */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao rolar */
+    padding: 10px 30px; /* Reduz o padding quando rolar */
+}
+
+header.scrolled .logo {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte da logo quando rolar */
+}
+
+header.scrolled .nav-links a {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte dos links quando rolar */
 }
 
 /* Estilo da seção home */
